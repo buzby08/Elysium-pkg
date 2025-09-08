@@ -11,15 +11,10 @@ makedepends=('pyinstaller')
 source=("git+https://github.com/buzby08/Elysium.git")
 sha256sums=('SKIP')
 
-pkgver() {
-    cd "$srcdir/yourrepo"
-    git describe --tags --long 2>/dev/null || \
-    echo "r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
-}
 
 build() {
 	cd "$srcdir/$pkgname"
-	pyinstaller --clean --no-confirm Elysium-linux.spec
+	pyinstaller --clean --noconfirm Elysium-linux.spec
 }
 
 package() {
