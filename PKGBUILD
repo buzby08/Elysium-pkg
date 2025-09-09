@@ -1,14 +1,14 @@
 # Maintainer: Liam Busby <busby.liam@protonmail.com>
 pkgname=elysium
 pkgver=1.3.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A custom file explorer"
 arch=('x86_64')
 url="https://www.elysiumfiles.co.uk"
 license=('custom')
 depends=('python')
 makedepends=('pyinstaller')
-source=("git+https://github.com/buzby08/Elysium.git")
+source=("$pkgname::git+https://github.com/buzby08/Elysium.git")
 sha256sums=('SKIP')
 
 
