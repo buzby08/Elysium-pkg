@@ -1,5 +1,5 @@
 # Maintainer: Liam Busby <busby.liam@protonmail.com>
-pkgname=Elysium
+pkgname=elysium
 pkgver=1.3.0
 pkgrel=2
 pkgdesc="A custom file explorer"
