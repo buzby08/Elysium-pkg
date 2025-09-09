@@ -1,7 +1,7 @@
 # Maintainer: Liam Busby <busby.liam@protonmail.com>
 pkgname=Elysium
 pkgver=1.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A custom file explorer"
 arch=('x86_64')
 url="https://www.elysiumfiles.co.uk"
@@ -20,10 +20,10 @@ build() {
 package() {
 	cd "$srcdir/$pkgname/dist/Elysium"
 	install -Dm755 "Elysium" "$pkgdir/usr/bin/Elysium"
-	cp -r "_internal" "$pkgdir/usr/bin/Elysium/_internal"
-	install -Dm644 "LICENSE.md" "$pkgdir/usr/share.licences/$pkgname/LICENSE"
-	install -Dm644 "Elysium.desktop" \
+	cp -r "_internal" "$pkgdir/usr/bin/_internal"
+	install -Dm644 "$srcdir/$pkgname/LICENSE.md" "$pkgdir/usr/share.licences/$pkgname/LICENSE"
+	install -Dm644 "$srcdir/$pkgname/Elysium.desktop" \
 		"$pkgdir/usr/share/applications/Elysium.desktop"
-	install -Dm644 "Images/ElysiumLogo.png" \
+	install -Dm644 "$srcdir/$pkgname/Images/ElysiumLogo.png" \
 		"$pkgdir/usr/share/pixmaps/Elysium.png"
 }
