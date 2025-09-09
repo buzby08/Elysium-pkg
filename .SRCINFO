@@ -1,7 +1,7 @@
 pkgbase = elysium
 	pkgdesc = A custom file explorer
 	pkgver = 1.3.0
-	pkgrel = 3
+	pkgrel = 4
 	url = https://www.elysiumfiles.co.uk
 	arch = x86_64
 	license = custom

@@ -1,7 +1,7 @@
 # Maintainer: Liam Busby <busby.liam@protonmail.com>
 pkgname=elysium
 pkgver=1.3.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A custom file explorer"
 arch=('x86_64')
 url="https://www.elysiumfiles.co.uk"
